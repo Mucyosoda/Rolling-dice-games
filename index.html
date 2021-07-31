@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pigs Game</title>
+  </head>
+  <body>
+    <div class="holdpoints--1" id="points--0">0</div>
+    <div>
+      <img src="congrats-4.gif" alt="Playing dice" class="congz--0 hidden" />
+    </div>
+    <div class="holdpoints--1" id="points--1">0</div>
+    <div>
+      <img src="congrats-4.gif" alt="Playing dice" class="congz--1 hidden" />
+    </div>
+    <div class="wintimes">Max winner: <span id="max--0">0</span></div>
+    <div class="wintimes1">Max winner: <span id="max--1">0</span></div>
+    <main>
+      <section class="player player--0 player--active">
+        <div class="wins--0 hidden">
+          <!-- <hi>Congulatulation you win!</hi> -->
+        </div>
+        <h2 class="name" id="name--0">Player 1</h2>
+        <!-- <p class="score" id="score--0">0</p> -->
+        <div class="current">
+          <p class="current-label">Rolling</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <div class="wins--1 hidden">
+          <!-- <hi>Congulatulation you win!</hi> -->
+        </div>
+        <h2 class="name" id="name--1">Player 2</h2>
+        <!-- <p class="score" id="score--1">0</p> -->
+        <div class="current">
+          <p class="current-label">Rolling</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-8.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+
+    <div class="modal">
+      <button class="close-modal">&times;</button>
+      <h1>Welcome to the Dice face 😍</h1>
+
+      <div>
+        <input
+          type="text"
+          class="p1"
+          id="player-one"
+          value="player 1"
+          maxlength="8"
+        />
+        <input
+          type="text"
+          class="p1"
+          value="player 2"
+          id="player-two"
+          maxlength="8"
+        />
+      </div>
+      <h3>You can add your names if you want</h3>
+      <button class="mbtn">PLAY</button>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
